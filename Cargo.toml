@@ -1,0 +1,24 @@
+﻿[workspace]
+resolver = "2"
+members = ["core", "commitments", "verifier", "bindings"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Amit Dua <your.email@example.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/amitduabits/zk-proof-system"
+
+[workspace.dependencies]
+halo2_proofs = "0.3.0"
+halo2_gadgets = "0.3.0"
+ff = "0.13"
+group = "0.13"
+pasta_curves = "0.5"
+rand = "0.8"
+subtle = "2.5"
+blake2b_simd = "1.0"
+curve25519-dalek = "4.1"
+sha2 = "0.10"
+criterion = "0.5"
+proptest = "1.4"

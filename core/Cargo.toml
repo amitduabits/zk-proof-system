@@ -1,0 +1,27 @@
+﻿[package]
+name = "zk-proof-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+halo2_proofs = { workspace = true }
+halo2_gadgets = { workspace = true }
+ff = { workspace = true }
+group = { workspace = true }
+pasta_curves = { workspace = true }
+rand = { workspace = true }
+subtle = { workspace = true }
+
+[dev-dependencies]
+criterion = { workspace = true }
+proptest = { workspace = true }
+
+[lib]
+name = "zk_proof_core"
+path = "src/lib.rs"
+
+[[bench]]
+name = "core_benchmarks"
+harness = false

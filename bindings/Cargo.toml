@@ -1,0 +1,19 @@
+﻿[package]
+name = "zk-proof-bindings"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+zk-proof-core = { path = "../core" }
+zk-proof-commitments = { path = "../commitments" }
+zk-proof-verifier = { path = "../verifier" }
+
+[dev-dependencies]
+criterion = { workspace = true }
+
+[lib]
+name = "zk_proof_bindings"
+path = "src/lib.rs"
+crate-type = ["cdylib", "rlib"]
