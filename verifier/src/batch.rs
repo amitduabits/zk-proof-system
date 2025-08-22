@@ -11,7 +11,7 @@ pub struct BatchVerifier {
 
 impl BatchVerifier {
     /// Create a new batch verifier
-    pub fn new(max_batch_size: usize) -> Self {
+    #[must_use] pub fn new(max_batch_size: usize) -> Self {
         Self { max_batch_size }
     }
 }

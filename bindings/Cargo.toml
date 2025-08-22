@@ -9,6 +9,7 @@ license.workspace = true
 zk-proof-core = { path = "../core" }
 zk-proof-commitments = { path = "../commitments" }
 zk-proof-verifier = { path = "../verifier" }
+wasm-bindgen = "0.2"
 
 [dev-dependencies]
 criterion = { workspace = true }

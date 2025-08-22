@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ZK Proof System WASM Test</title>
+</head>
+<body>
+    <h1>ZK Proof System WASM Interface</h1>
+    <script type="module">
+        import init, { create_proof, verify_proof } from './wasm-artifacts/zk_proof_bindings.js';
+        
+        async function run() {
+            await init();
+            
+            // Test proof creation
+            const input = new Uint8Array([1, 2, 3, 4]);
+            const proof = create_proof(input);
+            console.log('Proof created:', proof);
+            
+            // Test verification
+            const isValid = verify_proof(proof);
+            console.log('Proof valid:', isValid);
+        }
+        
+        run();
+    </script>
+</body>
+</html>

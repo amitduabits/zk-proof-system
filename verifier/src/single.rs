@@ -8,7 +8,7 @@ pub struct SingleVerifier;
 
 impl SingleVerifier {
     /// Create a new single verifier
-    pub fn new() -> Self {
+    #[must_use] pub fn new() -> Self {
         Self
     }
 }

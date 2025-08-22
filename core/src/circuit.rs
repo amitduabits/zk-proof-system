@@ -1,9 +1,5 @@
 //! Circuit implementations and helpers
 
-use halo2_proofs::{
-    circuit::{Layouter, SimpleFloorPlanner},
-    plonk::{Circuit, ConstraintSystem, Error},
-};
 
 /// Example circuit structure
 #[derive(Clone, Debug)]

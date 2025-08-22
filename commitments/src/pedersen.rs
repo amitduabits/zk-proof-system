@@ -1,6 +1,5 @@
 //! Pedersen commitment implementation
 
-use ff::Field;
 use group::Group;
 
 /// Pedersen commitment structure

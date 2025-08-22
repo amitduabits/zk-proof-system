@@ -1,7 +1,5 @@
 //! FFI bindings for C/C++ interop
 
-use std::ffi::{c_char, CStr};
-use std::ptr;
 
 /// Create a new proof
 ///

@@ -1,7 +1,7 @@
 //! Utility functions and helpers
 
 /// Calculate the number of rows needed for a given number of elements
-pub fn calculate_rows(elements: usize) -> usize {
+#[must_use] pub fn calculate_rows(elements: usize) -> usize {
     elements.next_power_of_two()
 }
 

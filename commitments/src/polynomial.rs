@@ -9,7 +9,7 @@ pub struct PolynomialCommitment {
 
 impl PolynomialCommitment {
     /// Create a new polynomial commitment
-    pub fn new(data: Vec<u8>) -> Self {
+    #[must_use] pub fn new(data: Vec<u8>) -> Self {
         Self { data }
     }
 }
