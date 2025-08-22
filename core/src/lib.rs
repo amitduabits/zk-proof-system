@@ -8,9 +8,10 @@
 #![warn(clippy::pedantic)]
 #![allow(clippy::module_name_repetitions)]
 
-pub mod circuit;
+pub mod circuits;
 pub mod error;
 pub mod proof;
+pub mod recursion; 
 pub mod utils;
 
 pub use error::{Error, Result};
